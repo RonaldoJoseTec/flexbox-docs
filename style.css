@@ -19,21 +19,41 @@
 .contido {
     height: 100px;
     width: 100px;
+    text-align: center;
+    line-height: 90px;
+    font-size: 20px;
     background-color: rgb(199, 157, 80);
     border: 3px solid #9e2f0d;
 }
 
 .titulo {
-    font-size: 20px;
+    font-size: 35px;
     font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 20px;
 }
 
 .subtitulo {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 14px 0;
+}    
+
+.propriedade {
     font-size: 17px;
     font-family: 'Times New Roman', Times, serif;
-}    
+    text-align: center;
+    padding: 14px 0;
+}
     
 .descricao-propriedade {
-        font-size: 15px;
+        font-size: 17px;
         font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+p {
+    color: darkblue;
+    line-height: 1.5;
 }

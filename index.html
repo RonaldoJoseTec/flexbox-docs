@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox documentação</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1 class="titulo">Flexbox</h1>
     <h2 class="subtitulo">Documentação</h2>
-    <h3>display: flex</h3>    
+    <p class="descricao-propriedade">É o recurso do CSS o qual nos permite organizar elementos em linha ou coluna; Mas antes de tudo precisamos compreender dois conceitos imprescindíveis que são:</p>
+    <p class=" descricao-propriedade"><strong style="color: red; text-decoration: underline;">"Container"</strong>: é o elemento principal da estrutura -o local onde serão organizados os items-</p>
+    <p class="descricao-propriedade"><strong style="color: red; text-decoration: underline;">"Items"</strong>: são os elementos que deverão ser alocados no container -filhos do container-</p>
+    <h3 class="propriedade">Display: flex</h3>    
     <p class="descricao-propriedade">A primeira propriedade que precisa ser declarada para que o Flexbox funcione!</p>
-    <p class="descricao-propriedade">Algumas propriedades como "Flex-direction: row"</p>
+    <p class="descricao-propriedade">Desta forma conseguimos organizar o layout dos items usando as  diversas propriedades. A seguir demonstraremos o "Flex-direction: row" que define a direção do layout.</p>
 
     <!--table>(tr>th.propriedade+th.valor)tr*3>td.propriedade+td.valor  -->
     <!--<table>
@@ -33,20 +36,22 @@
         </tr>
     </table> -->
 
-    <p>Exemplo:</p>
+    <p>Conforme o exemplo abaixo:</p>
     <div class="container">
-        <div class="contido">>>></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+        <div class="contido">6</div>
+        <div class="contido">7</div>
     </div>
-    <p>"Row-reverse"</p>
-    <p>"Column"</p>
-    <p>"Column-reverse"</p>
-
-    <p class="descricao-propriedade">"Flex-wrap: wrap"</p>
-    <p>Exemplo:</p>
+    <p>"Flex-direction: row-reverse" </p>
+    <p>"Flex-direction: column"</p>
+    <p>"Flex-direction: column-reverse"</p>
+    
+    <p class="descricao-propriedade">"Flex-wrap: wrap" esta propriedade define se os items ficarão na mesma linha ou serão forçados a uma quebra em várias linhas </p>
+    <p>Conforme o exemplo abaixo:</p>
     <div class="container">
         <div class="contido"></div>
         <div class="contido"></div>
@@ -57,8 +62,8 @@
     <p>"Nowrap"</p>
     <p>"Wrap-reverse"</p>
 
-    <p class="descricao-propriedade">"Flex-flow: row wrap"</p>
-    <p>Exemplo:</p>
+    <p class="descricao-propriedade">"Flex-flow: row wrap" permite definir a direção e o comportamento dos items em um único comando</p>
+    <p>Conforme o exemplo abaixo:</p>
     <div class="container">
         <div class="contido"></div>
         <div class="contido"></div>
@@ -67,8 +72,8 @@
         <div class="contido"></div>
     </div>
     
-    <p class="descricao-propriedade">"Justify-content: center"</p>
-    <p>Exemplo:</p>
+    <p class="descricao-propriedade">"Justify-content: center" define como os items flexíveis são alinhados na horizontal dentro do container, mas só terá efeito se houver espaço entre eles</p>
+    <p>Conforme o exemplo abaixo:</p>
     <div class="container">
         <div class="contido"></div>
         <div class="contido"></div>
@@ -81,8 +86,8 @@
     <p>"Space-around"</p>
     <p>"Between"</p>
 
-    <p class="descricao-propriedade">"Align-items: center"</p>
-    <p>Exemplo:</p>
+    <p class="descricao-propriedade">"Align-items: center" este por sua vez define como os items flexíveis são alinhados na horizontal dentro do container, mas só terá efeito se houver espaço entre eles</p>
+    <p>Conforme o exemplo abaixo:</p>
     <div class="container">
         <div class="contido"></div>
         <div class="contido"></div>
@@ -98,7 +103,7 @@
     <p>"Space-around"</p>
 
     <p class="descricao-propriedade">"Align-content: stretch"</p>
-    <p>Exemplo:</p>
+    <p>Conforme o exemplo abaixo:</p>
     <div class="container">
         <div class="contido"></div>
         <div class="contido"></div>
