@@ -7,6 +7,16 @@
     text-align: initial;
 }
 
+body {
+    padding-left: 35px;
+}
+
+section {
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
 .container-dir {
     height: 210px;
     width: 750px;
@@ -14,6 +24,15 @@
     border: 3px solid #6455aa;
     display: flex;
     flex-direction: row;
+}
+
+.container-dir2 {
+    height: 210px;
+    width: 750px;
+}
+
+article {
+
 }
 
 .container-wra {
@@ -24,6 +43,10 @@
     display: flex;
     flex-wrap: wrap;
 }
+.container-wra2 {
+    height: 210px;
+    width: 750px;
+}
 
 .container-flo {
     height: 210px;
@@ -31,7 +54,12 @@
     background-color: rgb(152, 190, 178);
     border: 3px solid #6455aa;
     display: flex;
-    flex-flow:row wrap-reverse;
+    flex-flow: row wrap-reverse;
+}
+
+.container-flo2 {
+    height: 210px;
+    width: 750px;
 }
 
 .container-con {
@@ -40,7 +68,12 @@
     background-color: rgb(152, 190, 178);
     border: 3px solid #6455aa;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
+}
+
+.container-con2 {
+    height: 210px;
+    width: 750px;
 }
 
 .container-ali {
@@ -49,7 +82,12 @@
     background-color: rgb(152, 190, 178);
     border: 3px solid #6455aa;
     display: flex;
-    align-items:center ;
+    align-items: center;
+}
+
+.container-ali2 {
+    height: 210px;
+    width: 750px;
 }
 
 .container-alc {
@@ -59,7 +97,12 @@
     border: 3px solid #6455aa;
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-end ;
+    align-content: flex-end;
+}
+
+.container-alc2 {
+    height: 315px;
+    width: 750px;
 }
 
 .contido {
@@ -84,7 +127,7 @@
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     padding: 14px 0;
-}    
+}
 
 .propriedade {
     font-size: 17px;
@@ -92,14 +135,23 @@
     text-align: center;
     padding: 14px 0;
 }
-    
+
 .descricao-propriedade {
-        font-size: 17px;
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-    }
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
 
 p {
     color: darkblue;
     line-height: 1.5;
+}
+
+.container-dir2 ul{
+    background-color: yellowgreen;
+}
+
+.rodape {
+    text-align: center;
+    padding: 25px 0;
 }

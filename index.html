@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox documentação</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1 class="titulo">Flexbox</h1>
     <h2 class="subtitulo">Documentação</h2>
-    <p class="descricao-propriedade">É o recurso do CSS o qual nos permite organizar elementos em linha ou coluna; Mas antes de tudo precisamos compreender dois conceitos imprescindíveis que são:</p>
-    <p class=" descricao-propriedade"><strong style="color: red; text-decoration: underline;">Container</strong>: é o elemento principal da estrutura -o local onde serão organizados os items-</p>
-    <p class="descricao-propriedade"><strong style="color: red; text-decoration: underline;">Items</strong>: são os elementos que deverão ser alocados no container -filhos do container-</p>
-    <h3 class="propriedade">Display: flex</h3>    
+    <p class="descricao-propriedade">É o recurso do CSS o qual nos permite organizar elementos em linha ou coluna; Mas
+        antes de tudo precisamos compreender dois conceitos imprescindíveis que são:</p>
+    <p class=" descricao-propriedade"><strong style="color: #6455aa"><em>Container</em></strong>: é o
+        elemento principal da estrutura local onde serão organizados os items</p>
+    <p class="descricao-propriedade"><strong style="color: #9e2f0d"><em>Items</em></strong>: são os
+        elementos que deverão ser alocados no container - filhos do container -</p>
+    <h3 class="propriedade">Display: flex</h3>
     <p class="descricao-propriedade">A primeira propriedade que precisa ser declarada para que o Flexbox funcione!</p>
-    <p class="descricao-propriedade">Desta forma conseguimos organizar o layout dos items usando as  diversas propriedades. A seguir demonstraremos o <em ><b>"Flex-direction: row"</em></b> que define a direção do layout.</p>
+    <p class="descricao-propriedade">Desta forma conseguimos organizar o layout dos items usando as diversas
+        propriedades, com isso demonstraremos as suas definições a seguir.<br>
+        <em><b>"Flex-direction: row"</em></b> define a direção do layout
+    </p>
 
     <!--table>(tr>th.propriedade+th.valor)tr*3>td.propriedade+td.valor  -->
     <!--<table>
@@ -37,97 +45,205 @@
     </table> -->
 
     <p>Conforme o exemplo abaixo:</p>
-    <div class="container-dir">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-    </div>
-    <p>"Flex-direction: row-reverse" </p>
-    <p>"Flex-direction: column"</p>
-    <p>"Flex-direction: column-reverse"</p>
-    
-    <p class="descricao-propriedade"><em ><b>"Flex-wrap: wrap"</b></em> esta propriedade define se os items ficarão na mesma linha ou serão forçados a uma quebra em várias linhas </p>
-    <p>Conforme o exemplo abaixo:</p>
-    <div class="container-wra">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-    </div>
-    <p>"Nowrap"</p>
-    <p>"Wrap-reverse"</p>
+    <section>
+        <div class="container-dir">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+            <div class="contido">7</div>
+            <div class="contido">8</div>
+        </div>
 
-    <p class="descricao-propriedade"><em ><b>"Flex-flow: row wrap-reverse"</b></em> permite definir a direção e o comportamento dos items em um único comando</p>
-    <p>Conforme o exemplo abaixo:</p>
-    <div class="container-flo">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-    </div>
-    
-    <p class="descricao-propriedade"><em ><b>"Justify-content: space-between"</b></em> define como os items flexíveis são alinhados na horizontal dentro do container, mas só terá efeito se houver espaço entre eles</p>
-    <p>Conforme o exemplo abaixo:</p>
-    <div class="container-con">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-    </div>
-    <p>"Flex-start"</p>
-    <p>"Flex-end"</p>
-    <p>"Between"</p>
-    <p>"Center"</p>
+        <div class="container-dir2">
+            <details>
+                <summary>"Flex-direction: row-reverse"</summary>
+                <p>são posicionados na direção oposta do texto</p>
+            </details>
 
-    <p class="descricao-propriedade"><em ><b>"Align-items: center"</b></em> este por sua vez define como os items flexíveis são alinhados na horizontal dentro do container, mas só terá efeito se houver espaço entre eles</p>
-    <p>Conforme o exemplo abaixo:</p>
-    <div class="container-ali">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-    </div>
-    <p>"Flex-start"</p>
-    <p>"Flex-end"</p>
-    <p>"Stretch"</p>
-    <p>"Baseline"</p>
-    <p>"Space-between"</p>
-    <p>"Space-around"</p>
+            <details>
+                <summary>"Flex-direction: column"</summary>
+                <P>são posicionados de cima para baixo</P>
+            </details>
+            
+            <details>
+                <summary>"Flex-direction: column-reverse"</summary>
+                <P>são posicionados de baixo para cima</P>
+            </details>
+        </div>
+    </section>
 
-    <p class="descricao-propriedade"><em ><b>"Align-content: flex-end"</b></em></p>
+    <p class="descricao-propriedade"><em><b>"Flex-wrap: wrap"</b></em> esta propriedade define se os items ficarão
+        na mesma linha ou serão forçados a uma quebra em várias linhas </p>
     <p>Conforme o exemplo abaixo:</p>
-    <div class="container-alc">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-    </div>
-    <p>"Flex-start"</p>
-    <p>"Center"</p>
-    <p>"stretch"</p>
-    <p>"Space-between"</p>
-    <p>"Space-around"</p>
-    <p>"Space-evenly"</p>
-       
+
+    <section>
+        <div class="container-wra">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+            <div class="contido">7</div>
+            <div class="contido">8</div>
+        </div>
+        <div class="container-wra2">
+            <details>
+                <summary>"Nowrap"</summary>
+                <p>os items são apertados em uma única linha</p>
+            </details>
+            
+            <details>
+                <summary>"Wrap-reverse"</summary>
+                <p>os items se separam em linhas adicionais em reverso</p>
+            </details>
+        </div>
+    </section>
+
+    <p class="descricao-propriedade"><em><b>"Flex-flow: row wrap-reverse"</b></em> é a combinação do
+        <em>flex-direction</em> e <em>flex-wrap</em> permitindo definir a direção e o
+        comportamento dos items em um único comando
+    </p>
+    <p>Conforme o exemplo abaixo:</p>
+
+    <section>
+        <div class="container-flo">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+            <div class="contido">7</div>
+            <div class="contido">8</div>
+        </div>
+        <div class="container-flo2">
+
+        </div>
+    </section>
+
+    <p class="descricao-propriedade"><em><b>"Justify-content: space-between"</b></em> define como os items flexíveis são
+        alinhados na horizontal dentro do container, mas só terá efeito se houver espaço entre eles</p>
+    <p>Conforme o exemplo abaixo:</p>
+
+    <section>
+        <div class="container-con">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+        </div>
+        <div class="container-con2">
+            <details>
+                <summary>"Flex-start"</summary>
+                <p>os items se alinham à esquerda do container</p>
+            </details>
+
+            <details>
+                <summary>"Flex-end"</summary>
+                <p>os items se alinham à direita do container</p>
+            </details>
+            
+            <details>
+                <summary>"Space-Around"</summary>
+                <p>os items são exibidos com espaço antes, entre e depois das linhas</p>
+            </details>
+
+            <details>
+                <summary>"Center"</summary>
+                <p>os items se alinham no centro do container</p>
+            </details>
+        </div>
+    </section>
+
+    <p class="descricao-propriedade"><em><b>"Align-items: center"</b></em> este por sua vez define como os items
+        flexíveis são alinhados na horizontal dentro do container, mas só terá efeito se houver espaço entre eles</p>
+    <p>Conforme o exemplo abaixo:</p>
+
+    <section>
+        <div class="container-ali">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+            <div class="contido">7</div>
+            <div class="contido">8</div>
+        </div>
+        <div class="container-ali2">
+            <details>
+                <summary>"Flex-start"</summary>
+                <p>os items se alinham na parte de cima do container</p>
+            </details>
+            
+            <details>
+                <summary>"Flex-end"</summary>
+                <p>os items se alinham na parte de baixo do container</p>
+            </details>
+
+            <details>
+                <summary>"Stretch"</summary>
+                <p>os items se esticam para preencher o container</p>
+            </details>
+
+            <details>
+                <summary>"Baseline"</summary>
+                <P>os items se alinham na linha da base do container</P>
+            </details>
+        </div>
+    </section>
+
+    <p class="descricao-propriedade"><em><b>"Align-content: flex-end"</b></em> é usado para definir como múltiplas
+        linhas devem ser espaçadas uma das outras</p>
+    <p>Conforme o exemplo abaixo:</p>
+
+    <section>
+        <div class="container-alc">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+            <div class="contido">7</div>
+            <div class="contido">8</div>
+        </div>
+        <div class="container-alc2">
+            <details>
+                <summary>"Flex-start"</summary>
+                <p>as linhas são agrupadas no topo do container</p>
+            </details>
+
+            <details>
+                <summary>"Center"</summary>
+                <p>as linhas são agrupadas no centro vertical do container</p>
+            </details>
+
+            <details>
+                <summary>"Stretch"</summary>
+                <p>as linhas se esticam para preencher o container</p>
+            </details>
+
+            <details>
+                <summary>"Space-between"</summary>
+                <p>as linhas são posicionadas com espaço igual entre elas</p>
+            </details>
+
+            <details>
+                <summary>"Space-around"</summary>
+                <p>as linhas são posicionadas com espaço igual em torno delas</p>
+            </details>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <a href="https://github.com/RonaldoJoseTec/flexbox-docs.git">github.com/RonaldoJoseTec</a><br>
+        Copyright 2023 © - All rights reserved - RonaldoJoseTec
+    </footer>
+
 </body>
+
 </html>
