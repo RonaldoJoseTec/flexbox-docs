@@ -31,10 +31,6 @@ section {
     width: 750px;
 }
 
-article {
-
-}
-
 .container-wra {
     height: 210px;
     width: 750px;
@@ -43,6 +39,7 @@ article {
     display: flex;
     flex-wrap: wrap;
 }
+
 .container-wra2 {
     height: 210px;
     width: 750px;
@@ -142,13 +139,46 @@ article {
     text-align: center;
 }
 
+.definicao {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+
 p {
     color: darkblue;
     line-height: 1.5;
 }
 
-.container-dir2 ul{
-    background-color: yellowgreen;
+.exemplo {
+    padding-left: 100px;
+    color: darkblue;
+    line-height: 1.5;
+}
+
+.container-dir2 summary{
+    padding: 7px 0 0 0;
+}
+
+.container-wra2 summary{
+    padding: 7px 0 0 0;
+}
+
+.container-flo2 summary{
+    padding: 7px 0 0 0;
+}
+
+.container-con2 summary{
+    padding: 7px 0 0 0;
+}
+
+.container-ali2 summary{
+    padding: 7px 0 0 0;
+}
+
+.container-alc2 summary{
+    padding: 7px 0 0 0;
 }
 
 .rodape {
